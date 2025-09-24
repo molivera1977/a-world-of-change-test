@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/a-world-of-change-test/static/css/main.eaee8e8e.css",
+    "main.js": "/a-world-of-change-test/static/js/main.1be8f2cb.js",
+    "static/js/488.a2315f3f.chunk.js": "/a-world-of-change-test/static/js/488.a2315f3f.chunk.js",
+    "index.html": "/a-world-of-change-test/index.html",
+    "main.eaee8e8e.css.map": "/a-world-of-change-test/static/css/main.eaee8e8e.css.map",
+    "main.1be8f2cb.js.map": "/a-world-of-change-test/static/js/main.1be8f2cb.js.map",
+    "488.a2315f3f.chunk.js.map": "/a-world-of-change-test/static/js/488.a2315f3f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaee8e8e.css",
+    "static/js/main.1be8f2cb.js"
+  ]
+}
