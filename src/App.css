@@ -1,38 +1,207 @@
-.App {
+/* Global styles */
+body {
+  background: #f0f9ff;
+  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f9ff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sticky Title */
+h1 {
+  color: #0077b6;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  background: #f0f9ff;
+  padding: 10px 0;
+  z-index: 10;
+  border-bottom: 2px solid #0096c7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Section headers */
+h2 {
+  color: #023e8a;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Card styling */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  max-width: 650px;
+  width: 100%;
+  text-align: left;
+}
+
+.card p {
+  font-size: 1.05rem;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.btn {
+  background-color: #48cae4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0096c7;
+}
+
+.btn-submit {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #e76f51;
+}
+
+/* Input fields */
+.text-input {
+  padding: 10px;
+  border: 2px solid #48cae4;
+  border-radius: 8px;
+  margin: 10px 0;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.text-area {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #48cae4;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Answer choices (big buttons) */
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.choice-btn {
+  background: #caf0f8;
+  border: 2px solid #0096c7;
+  border-radius: 12px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 1rem;
+  min-width: 140px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.choice-btn:hover {
+  background: #90e0ef;
+}
+
+.choice-btn.selected {
+  background: #0077b6;
+  color: white;
+  border-color: #023e8a;
+}
+
+/* Correct/Incorrect feedback */
+.correct {
+  color: green;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Navigation buttons row */
+.nav-buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Progress bar */
+progress {
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color: #48cae4;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+progress::-moz-progress-bar {
+  background-color: #48cae4;
+  border-radius: 10px;
+}
+
+/* Welcome + Final screens centered */
+.welcome-container,
+.final-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 1;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Celebration styling */
+.celebration {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.encouragement {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0077b6;
+  text-align: center;
+  margin-top: 15px;
 }
